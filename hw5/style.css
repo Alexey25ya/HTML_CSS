@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+}
+
+.top {
+    padding: 40px;
+    padding-bottom: 100px;
+}
+
+.header {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orange {
+    color: #F25822;
+}
+
+.top_content {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 41px;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+.top_buttons {
+    margin-top: 52px;
+}
+
+.start_link {
+    text-decoration: none;
+    margin-right: 72px;
+    background: #F25822;
+    color: #fff;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
+    border: 20px solid #F25822
+}
+
+.video_link {
+    text-decoration: none;
+}
+
+.top_logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  
+Стилистика для второго блока 
+*/
+
+.content {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    font-family: sans-serif;
+    display: grid;
+    justify-content: center;
+}
+
+.content_item {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    justify-content: center;
+    text-align: left;
+    gap: 30px;
+}
+
+.header_content {
+    padding-top: 92px;
+    padding-bottom: 52px;
+    grid-template-columns: 682px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    gap: 30px;
+
+}
+
+.content_item_big {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.item {
+    display: grid;
+    display: grid;
+    justify-items: left;
+    gap: 30px;
+    background: #FFFFFF;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+
+}
+
+.item_big {
+    display: grid;
+    display: grid;
+    justify-items: center;
+
+}
+
+.heading {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.item_text {
+    font-size: 15px;
+    line-height: 150%;
+    color: #666666;
+}
+
+.item_link {
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.item_link_big {
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    background: #F25822;
+    color: #fff;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
+    border: 20px solid #F25822
+}
