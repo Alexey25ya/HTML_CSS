@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+
+.header {
+    min-height: 75px;
+    background: #222222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.top_menu_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 41px;
+}
+
+.top_menu_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 33px;
+}
+
+.top_content {
+    display: flex;
+    background: #F1E4E6;
+    padding-left: 64px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top_head {
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}
+
+.top_title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.top_subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+
+.color {
+    color: #F16D7F;
+}
+
+.top_all_subtitle {
+    display: flex;
+    gap: 15px;
+
+}
+
+.sale_menu {
+    display: -ms-grid;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+
+.sale_item {
+    position: relative;
+}
+
+.sale_content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.sale_item_big {
+    min-height: 180px;
+    grid-column: 1 / -1;
+}
+
+.sale_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.sale_heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #F16D7F;
+}
+
+.content {
+    padding-bottom: 96px;
+}
+
+.content_heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #222222;
+}
+
+.content_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 6px;
+    color: #9F9F9F;
+}
+
+.content_info {
+    padding-bottom: 48px;
+    margin-top: 48px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (360px)[auto-fit];
+    grid-template-columns: repeat(auto-fit, 360px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.item_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+.browse_link {
+    width: 212px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #F16D7F;
+    align-items: center;
+}
+
+.batton {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 376px);
+        padding-right: calc(50% - 376px);
+    }
+
+    .top_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top_title {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .top_subtitle {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .photo {
+        width: 368px;
+    }
+
+    .sale_item_big {
+        min-height: 116px;
+    }
+}
