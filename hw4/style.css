@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+
+}
+
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -30,6 +36,16 @@ body {
     color: #F25822;
 }
 
+.menu {
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    gap: 40px;
+}
+
 .top_content {
     margin-top: 100px;
     margin-bottom: 200px;
@@ -42,7 +58,22 @@ body {
 }
 
 .title {
+    color: #000;
+    font-family: Raleway;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     margin-bottom: 40px;
+}
+
+.text {
+    color: #888;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .top_buttons {
