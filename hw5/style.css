@@ -8,6 +8,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .center {
     padding-left: calc(50% - 585px);
     padding-right: calc(50% - 585px);
@@ -89,7 +93,7 @@ body {
 }
 
 .header_content {
-    padding-top: 92px;
+    padding-top: 192px;
     padding-bottom: 52px;
     grid-template-columns: 682px;
     display: grid;
@@ -140,6 +144,8 @@ body {
 .item_link {
     text-decoration: none;
     font-size: 11px;
+    font-weight: 600;
+    font-style: normal;
     line-height: 150%;
     color: #000000;
 }
