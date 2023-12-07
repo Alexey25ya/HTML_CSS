@@ -1,3 +1,118 @@
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+
+
+
+@-webkit-keyframes pulse-regular {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse-regular {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -57,6 +172,10 @@ summary::-webkit-details-marker {
 }
 
 .header__checkbox:checked~.mobile-menu {
+    right: 0;
+}
+
+.header__checkbox:hover~.mobile-menu {
     right: 0;
 }
 
@@ -174,6 +293,8 @@ summary::-webkit-details-marker {
 .top_head {
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
+    -webkit-animation: pulse-regular 2s ease 0s infinite normal backwards;
+    animation: pulse-regular 2s ease 0s infinite normal backwards;
 }
 
 .top_title {
@@ -412,6 +533,8 @@ summary::-webkit-details-marker {
     -ms-flex-align: center;
     align-items: center;
     gap: 24px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 .advantages_heading {
@@ -432,20 +555,20 @@ summary::-webkit-details-marker {
 }
 
 .subscribe {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    background: url(img/subscribe.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 5% 0 8.2% 0;
 }
 
 .subscribe_content {
-    position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .subscribe_left {
@@ -575,21 +698,15 @@ summary::-webkit-details-marker {
 
     }
 
-    .subscribe_img {
-        width: 100%;
-    }
 
     .subscribe_content {
-        margin-top: 58px;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 48px;
     }
 
-    .bottom {
-        margin-top: 140px;
-    }
+
 }
 
 @media (max-width: 767px) {
@@ -662,12 +779,9 @@ summary::-webkit-details-marker {
 
     }
 
-    .subscribe_img {
-        min-width: 100%;
-    }
+
 
     .subscribe_content {
-        margin-top: 58px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -675,7 +789,6 @@ summary::-webkit-details-marker {
     }
 
     .bottom {
-        margin-top: 140px;
         display: flex;
         flex-direction: column;
         align-items: center;
